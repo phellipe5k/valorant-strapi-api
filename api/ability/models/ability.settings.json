@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "abilities",
+  "info": {
+    "name": "ability",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "character": {
+      "model": "characters",
+      "via": "ability"
+    },
+    "SignatureAbility": {
+      "type": "string"
+    },
+    "Ultimate": {
+      "type": "string"
+    },
+    "signatureAbilityLogo": {
+      "type": "json"
+    },
+    "UltimateLogo": {
+      "type": "json"
+    },
+    "Ability1": {
+      "type": "string"
+    },
+    "Ability2": {
+      "type": "string"
+    },
+    "Ability1Logo": {
+      "type": "json"
+    },
+    "Ability2Logo": {
+      "type": "json"
+    }
+  }
+}
